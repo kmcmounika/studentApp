@@ -5,39 +5,14 @@ public class Teacher
 private int tid;
 private String tname;
 private double tsal;
-private boolean flag;
-public Teacher(int tid, String tname, double tsal) {
+private String taddr;
+public Teacher(int tid, String tname, double tsal, String taddr) {
 	super();
 	this.tid = tid;
 	this.tname = tname;
 	this.tsal = tsal;
-	
+	this.taddr = taddr;
 }
-
-public Teacher(int tid, String tname, double tsal, boolean flag) {
-	super();
-	this.tid = tid;
-	this.tname = tname;
-	this.tsal = tsal;
-	this.flag = flag;
-}
-
-public String getTname() {
-	return tname;
-}
-
-public void setTname(String tname) {
-	this.tname = tname;
-}
-
-public boolean isFlag() {
-	return flag;
-}
-
-public void setFlag(boolean flag) {
-	this.flag = flag;
-}
-
 public int getTid() {
 	return tid;
 }
@@ -50,10 +25,16 @@ public double getTsal() {
 public void setTsal(double tsal) {
 	this.tsal = tsal;
 }
+public String getTaddr() {
+	return taddr;
+}
+public void setTaddr(String taddr) {
+	this.taddr = taddr;
+}
 @Override
 public String toString() {
 	return "Teacher [tid=" + tid + ", tname=" + tname + ", tsal=" + tsal
-			+ "]";
+			+ ", taddr=" + taddr + "]";
 }
 
 }
